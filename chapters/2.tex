@@ -1,8 +1,87 @@
 \header{chapter1}
 \chapter{}
-    \label{chapter1}
-    \mkexercise{Demostrar que la inversa de la capacidad equivalente de la asociación de condensadores en serie es igual a a la suma de las capacidades recíprocas.} 
-\mkexercise{Calcula el equivalente Thevening entre los puntos A y B del circuito siguiente:}
-\mkexercise{Determinar el punto de operación (bias point), del siguiente circuito de forma manual y después verificarlo con la ayuda del simulador.}
-\mkexercise{Con la ayuda del simulador calcular la curva de transferencia:''Tensión de salida en función de la tensión de entrada" para el circuito de la figura considerando que su entrada cambia entre 0 y 5 votios. ¿Qué función hace el condensador?. ¿Qué tensión hay a la salida en ausencia de tensión de entrada?}
-\mkexercise{Con la ayuda del simulador, estudiar y explicar el comportamiento Transitorio del Circuito de la figura durante 40 milisegundos cuando se excita con un pulso de 5 voltios durante un tiempo de 10 milisegundos. ¿Cuál es la carga almacenada en el condensador a los 5 milisegundos?.¿Y a los 30 milisegundos?.}
+\label{chapter1}
+
+\mkexercise{Demostrar que la inversa de la capacidad equivalente de la
+asociación de condensadores en serie es igual a a la suma de las
+capacidades recíprocas.}
+
+\mksolution{
+  Aplicamos la segunda ley de Kirchhoff:
+  \begin{equation}
+    \begin{split}
+      V_{eq}(t)- V_1(t)- V_2(t) - V_3(t) - ... - V_n(t) = 0 \\
+      V_{eq}(t) = V_1(t) + V_2(t) + V_3(t) + ... + V_n(t) \\
+      \end{split}
+    \end{equation}
+    Derivamos la función $V_{eq}(t)$ .
+    \begin{equation}
+        V_{eq}'(t) = V_1'(t) + V_2'(t) + V_3'(t) + ... + V_n'(t) \\
+      \end{equation}
+    Reemplazamos $V_n$ por la ecuación de la caída de tensión en los
+    bornes de un condensador:
+    \begin{equation}
+    \dfrac{I(t)}{C}  =  V'(t)
+    \end{equation}
+
+    \begin{equation}
+      \dfrac{I(t)}{C_{eq}} = \dfrac{I(t)}{C_{1}} + \dfrac{I(t)}{C_{2}} +
+      \dfrac{I(t)}{C_{3}} + ... + \dfrac{I(t)}{C_{n}}
+    \end{equation}
+
+    Como la corriente que pasa por el circuito es igual podemos
+    eliminarla de la ecuación y resulta:
+    \begin{equation}
+      \dfrac{1}{C_{eq}} = \dfrac{1}{C_{1}} + \dfrac{1}{C_{2}} +
+      \dfrac{1}{C_{3}} + ... + \dfrac{1}{C_{n}}
+      \end{equation}
+  }
+
+
+\mkexercise{Calcula el equivalente Thevening entre los puntos A y B
+  del circuito siguiente:}
+
+\mksolution{
+  \begin{enumerate}[1.]
+    \item Eliminar fuentes de corriente y tensión. Las de corriente
+      se transforman en circuitos abiertos y las de tensión en
+      cortocircuitos.
+
+      %% Insertar imagen resultante Esto simplifica mucho el circuito
+      Ya que los cortocircuitos eliminan algunas resistencias, como $R_1$ y
+      $R_2$. \footnotetext[1]{\textbf{ NOTA:} Hay que recordar que la asociación de
+        resistencias no funciona igual porque el puerto A-B está desconectado
+        pero tiene un carga asociada.}
+
+     \begin{equation}
+       \begin{split}
+         R_s &= R_4+R_3+R_5\\
+         R_S &= \nc{3}{3} + \nc{5}{3} + 500\\
+         R_s &=  \nc{8.5}{3}\\
+         R_{TH} &= \dfrac{1}{\dfrac{1}{R_s}+\dfrac{1}{R_6}}\\
+         R_{TH} &= \dfrac{1}{\dfrac{1}{\nc{8.5}{3}}+\dfrac{1}{\nc{0.8}{3}}}\\
+         R_{TH} &= 731.18 \  \Omega
+         \end{split}
+       \end{equation}
+       \item Para calcular la $V_{TH}$ tenemos que resolver
+         el circuito y calcular la diferencia de potencial
+         entre los terminales A y B.
+   \end{enumerate}
+}
+
+\mkexercise{Determinar el punto de operaciÃ³n (bias point), del
+siguiente circuito de forma manual y despuÃ©s verificarlo con la ayuda
+del simulador.}
+
+\mkexercise{Con la ayuda del simulador calcular la curva de
+transferencia:''TensiÃ³n de salida en funciÃ³n de la tensiÃ³n de
+entrada" para el circuito de la figura considerando que su entrada
+cambia entre 0 y 5 votios. Â¿QuÃ© funciÃ³n hace el
+condensador?. Â¿QuÃ© tensiÃ³n hay a la salida en ausencia de tensiÃ³n
+de entrada?}
+
+\mkexercise{Con la ayuda del simulador, estudiar y explicar el
+comportamiento Transitorio del Circuito de la figura durante 40
+milisegundos cuando se excita con un pulso de 5 voltios durante un
+tiempo de 10 milisegundos. Â¿CuÃ¡l es la carga almacenada en el
+condensador a los 5 milisegundos?.Â¿Y a los 30 milisegundos?.}
