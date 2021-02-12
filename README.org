@@ -1,16 +1,16 @@
 * Fundamentos de electrónica
 ** Relaciones de problemas
-Tengo algunas relaciones de ejercicios que me gustaría
-tener en LaTeX por el simple hecho de poder estudiar
-luego.
+Estos son problemas puntuables de electrónica, escribir soluciones se
+me da muy bien pero redactarlas sin faltas ortográficas no, es algo
+que espero mejorar algun día.
 
-Lo publico porque creo que la gente lo necesitará para
-aprender, copiar o estudiar; hay sitios dedicados como
-Wuolah pero prefiero evitarlos porque me parecen feos
-estéticamente, comercian con nuestro conocimiento y
-como creo firmemente que estudiar/aprender debería ser
-gratis y por último no pueden ver el código de LaTeX
-que de alguna forma puede motivar a los demás a
-escribir sus propias soluciones y publicarlas.
-
+Lo publico por varios motivos:
+1) Seguro hay alguien que puede necesitarlos, para copiar, para
+estudiar hay un línea muy fina entre lo uno y lo otro.
+2) Hay sitios dedicados pero no me gustan son feos y desordenados,
+además que te venden cosas, están llenos de publicidad y creo que
+ firmemente que quiera estudiar y aprender deberían hacerlo sin pagar nada.
+3) Me gusta el formta que da LaTeX a los documentos, tal vez publicar
+ código y que la gente lo vea motive a los demás a publicas sus
+   ejercicios o sus soluciones.
 
