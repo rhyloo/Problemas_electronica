@@ -5,12 +5,12 @@ me da muy bien pero redactarlas sin faltas ortográficas no, es algo
 que espero mejorar algun día.
 
 Lo publico por varios motivos:
-1) Seguro hay alguien que puede necesitarlos, para copiar, para
+- Seguro hay alguien que puede necesitarlos, para copiar, para
 estudiar hay un línea muy fina entre lo uno y lo otro.
-2) Hay sitios dedicados pero no me gustan son feos y desordenados,
+- Hay sitios dedicados pero no me gustan son feos y desordenados,
 además que te venden cosas, están llenos de publicidad y creo que
  firmemente que quiera estudiar y aprender deberían hacerlo sin pagar nada.
-3) Me gusta el formta que da LaTeX a los documentos, tal vez publicar
- código y que la gente lo vea motive a los demás a publicas sus
-   ejercicios o sus soluciones.
+- Me gusta el formta que da LaTeX a los documentos, tal vez publicar
+código y que la gente lo vea motive a los demás a publicas sus
+  ejercicios o sus soluciones.
 
